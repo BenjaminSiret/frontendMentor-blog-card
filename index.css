@@ -60,6 +60,9 @@ p {
   width: fit-content;
 }
 
+.article-content {
+  line-height: 150%;
+}
 .article-footer {
   display: flex;
   align-items: center;
