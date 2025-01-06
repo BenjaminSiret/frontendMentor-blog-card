@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #111111;
+  --color-secondary: #6b6b6b;
+  --color-background: #f4d04e;
+  --color-background-secondary: #ffff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+body {
+  background-color: var(--color-background);
+  font-family: "Figtree", sans-serif;
+  color: var(--color-primary);
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  background-color: var(--color-background-secondary);
+  width: 327px;
+  height: 31.3125rem;
+  padding: 1.5rem;
+  border: 0.0625rem solid var(--color-primary);
+  border-radius: 20px;
+  box-shadow: 0.5rem 0.5rem 0 rgba(0, 0, 0, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  width: 17.4375rem;
+  height: 12.5rem;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.tag {
+  background-color: var(--color-background);
+  padding: 0.3125rem 0.8125rem;
+  margin: 1.5rem 0;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+
+.article-footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 1.5rem;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+}
+
+/* Typography */
+.text-lg {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.text-md {
+  font-size: 14px;
+  color: var(--color-secondary);
+}
+.text-sm {
+  font-size: 12px;
+}
+.bold {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 24rem;
+    height: 32.625rem;
+  }
+
+  .image {
+    width: 21rem;
+    height: 12.5rem;
+  }
+
+  .text-lg {
+    font-size: 24px;
+  }
+  .text-md {
+    font-size: 16px;
+  }
+  .text-sm {
+    font-size: 14px;
+  }
+
+  h1:hover {
+    color: var(--color-background);
+    cursor: pointer;
+  }
+}
